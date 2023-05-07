@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color:#EEE;
+    font-family: 'Montserrat', sans-serif;
+    animation : transitionIn 1s;
+}
+
+#content {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:30px;
+    box-sizing:border-box;
+    background-color:white;
+    box-shadow: 0px 0px 3px #555;
+    width:80%;
+}
+
+.container {
+    padding: 3em 0 2em;
+}
+
+.navbar {
+    background-color: lightgrey;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.imgcar {
+    height : 450px;
+    border-radius: 18% 10%;
+    }
+
+.imgcaraccueil {
+    border-radius: 18% 10%;
+}
+
+.car{
+    box-shadow: 4px 2.5px 2px 1px rgba(193, 192, 193, 0.3);
+    border-radius: 18% 10%;
+}
+
+#btn-connexion{
+    position: absolute;
+    right: 1%;
+    top: 16%;
+}
+
+#btn-deconnexion{
+    position: absolute;
+    right: 1%;
+    top: 16%;
+}
+
+#menu-connexion{
+    position: absolute;
+    right: 10%;
+    list-style: none;
+}
+
+#footer{
+    padding: 2em 0 2.5em 0;
+    margin-top: 40px;
+    background-color: #f6f6f6;
+    display: block;
+}
+
+.envoiMailFollow{
+    width: 100%;
+    max-width: 68em;
+    margin: 0 auto;
+    padding: 0 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.envoiMailFollow section:nth-child(1){
+    width: calc(66% - 2.5em);
+    margin-right: 2.5em;
+}
+
+.envoiMailFollow h2{
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 2em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    padding-left: 1.3em;
+}
+
+.envoiMailFollow form{
+    margin-bottom: 0;
+    margin: 0 0 2em 0;
+    overflow-x: hidden;
+}
+
+.envoiMailFollow input[type="text"],.envoiMailFollow input[type="email"],.envoiMailFollow textarea{
+    height: 3em;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #c9c9c9;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.field.half{
+    width: calc(50% - 0.75em);
+}
+
+.field{
+    box-sizing: inherit;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1.5em 0 0 1.5em;
+}
+
+.fields{
+    box-sizing: inherit;
+}
+
+#nomEnvoiMail{
+    height: 3em;
+}
+
+.actions{
+    display: flex;
+    cursor: default;
+    list-style-type: none;
+    margin-left: -1em;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.envoiMailFollow ul{
+    margin: 1.5em 0 2em 1em;
+}
+
+.btnEnvoyer{
+    box-shadow: none;
+    background-color: #585858;
+    color: #ffffff !important;
+    appearance: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 900;
+    height: 3.5em;
+    letter-spacing: 0.35em;
+    line-height: 3.45em;
+    overflow: hidden;
+    padding: 0 1.25em 0 1.6em;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btnEnvoyer:hover{
+    background-color: rgb(80, 136, 80);
+}
+
+.icons{
+    margin-bottom: 0;
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    margin: -1em 0 2em -1em;
+}
+
+.icons li{
+    display: inline-block;
+    padding: 1em 0 0 1em;
+}
+
+.icons a img{
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    background-color: transparent;
+    border: solid 1px #c9c9c9;
+    border-radius: 12px;
+    width: 2.65em;
+    height: 2.65em;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.65em;
+    color: inherit;
+}
+
+.icons a img:hover{
+    background-color: rgb(80, 136, 80);
+}
+
+.mainAccueil{
+    padding: 6em 0 6em 0;
+}
+
+.innerAccueil{
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 2.5em 4.5em;
+}
+
+.tabAccueil{
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 2.5em;
+}
+
+.pricing-plan {
+    width: 21%;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+    margin: 15px;
+}
+
+.pricing-plan__header {
+    padding: 25px;
+    background: #009578;
+    color: #ffffff;
+}
+
+.pricing-plan__title,
+.pricing-plan__summary {
+    margin: 0;
+    text-align: center;
+}
+
+.pricing-plan__title{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.pricing-plan__summary{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.pricing-plan__description{
+    padding: 25px;
+}
+
+.pricing-plan__list{
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-plan__feature{
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.pricing-plan__feature:not(:last-child){
+    margin-bottom: 0.5em;
+}
+
+.pricing-plan__feature::before{
+    content: "\2714";
+    color: #009578;
+    position: absolute;
+    left: 0;
+}
+
+.pricing-plan__actions{
+    padding: 25px;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+}
+.pricing-plan__button{
+    display: inline-block;
+    margin: 15px auto;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #009578;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #009578;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.pricing-plan__button:hover{
+    background: #009578;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.pricing-plan__cost{
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+}
+
+.pricing-plan__text{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.pricing-plan--highlighted{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.pricing-plan-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.pricing-plan__special-text{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: #007c64;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.envoiProposition{
+    width: 100%;
+    max-width: 68em;
+    margin: 0 auto;
+    padding: 0 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.envoiProposition section:nth-child(1){
+    width: calc(66% - 2.5em);
+    margin-right: 2.5em;
+    border: 2px solid rgba(0, 149, 120, 20%);
+    padding: 2%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.envoiProposition h2{
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 2em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    text-align: center;
+}
+
+.envoiProposition form{
+    margin-bottom: 0;
+    margin: 0 0 2em 0;
+    overflow-x: hidden;
+}
+
+.envoiProposition input[type="text"],.envoiProposition textarea{
+    height: 3em;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #c9c9c9;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.propo.half{
+    width: calc(50% - 0.75em);
+}
+
+.pro{
+    box-sizing: inherit;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1.5em 0 0 0;
+}
+
+.propo{
+    box-sizing: inherit;
+}
+
+#TitreProposition{
+    height: 3em;
+}
+
+.actionspropo{
+    display: flex;
+    cursor: default;
+    list-style-type: none;
+    margin-left: -1em;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.envoiProposition ul{
+    margin: 1.5em 0 2em 1em;
+}
+
+.btnProposer{
+    box-shadow: none;
+    background-color: #585858;
+    color: #ffffff !important;
+    appearance: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 900;
+    height: 3.5em;
+    letter-spacing: 0.35em;
+    line-height: 3.45em;
+    overflow: hidden;
+    padding: 0 1.25em 0 1.6em;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btnProposer:hover{
+    background-color: rgb(80, 136, 80);
+}
+
+.discord-accueil, .bonPlan-accueil, .pp-accueil, .container-pp__1, .container-pp__2, .container-pp__3, .container-pp__4, .container-pp__5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+.pp-1__picture{
+    width: 502px;
+    height: 277px;
+}
+
+.pp-2__picture{
+    width: 329px;
+    height: 169px;
+}
+
+.pp-5__picturet{
+    width: 502px;
+    height: 277px;
+}
+
+.bonPlan-accueil{
+    max-width: 100%;
+}
+
+.discord-accueil__text, .projetPedagogique-accueil__text, .pp-2__text, .pp-4__text{
+    max-width: 25%;
+    margin: 0 2em 0 0;
+}
+
+.bonPlan-accueil__text, .pp-1__text, .pp-3__text, .pp-5__text{
+    max-width: 25%;
+    margin: 0 0 0 2em;
+}
+
+.discord-accueil__image, .projetPedagogique-accueil__image, .pp-2__image, .pp-4__image{
+    margin: 0 0 0 2em;
+}
+
+.bonPlan-accueil__car{
+    margin: 0 2em 0 0;
+}
+
+.discord-accueil__picture, .projetPedagogique-accueil__picture, .pp-2__picture, .pp-4__picture, .pp-1__picture, .pp-3__picture, .pp-5__picturet{
+    border-radius: 200px 75px 75px 75px;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 12%);
+    transition: all .2s ease-in-out;
+}
+
+.discord-accueil__picture:hover{
+    transform: scale(1.1);
+}
+
+.envoiInformation{
+    width: 100%;
+    max-width: 68em;
+    margin: 0 auto;
+    padding: 0 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.envoiInformation section:nth-child(1){
+    width: calc(66% - 2.5em);
+    margin-right: 2.5em;
+    border: 2px solid rgba(0, 149, 120, 20%);
+    padding: 2%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.envoiInformation h2{
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 2em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    text-align: center;
+}
+
+.envoiInformation form{
+    margin-bottom: 0;
+    margin: 0 0 2em 0;
+}
+
+.envoiInformation input[type="text"],.envoiInformation input[type="password"]{
+    height: 3em;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #c9c9c9;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+}
+
+.remail.half{
+    width: calc(50% - 0.75em);
+}
+
+.mailre{
+    box-sizing: inherit;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1.5em 0 0 0;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.remail{
+    box-sizing: inherit;
+}
+
+#NouvMail{
+    height: 3em;
+    text-align: center;
+}
+
+.actionsremail{
+    display: flex;
+    cursor: default;
+    list-style-type: none;
+    margin-left: -1em;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.envoiInformation ul{
+    margin: 1.5em 0 2em 1em;
+}
+
+.btnModifiermail{
+    box-shadow: none;
+    background-color: #585858;
+    color: #ffffff !important;
+    appearance: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 900;
+    height: 3.5em;
+    letter-spacing: 0.35em;
+    line-height: 3.45em;
+    overflow: hidden;
+    padding: 0 1.25em 0 1.6em;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 294%;
+    margin-top: 10%;
+}
+
+.btnModifiermail:hover{
+    background-color: rgb(80, 136, 80);
+}
+
+.message{
+    width: 50%;
+}
+
+.presentation__text{
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    margin: auto;
+}
+
+.presentation__text h4{
+    padding: 2em 0 2em;
+    font-weight: 600;
+}
+
+.menuinfos  {
+    float:left;
+    width:240px;
+    }
+.contenueinfo {
+margin-left:245px;
+background-color:#9966FF;
+}
+
+.bonplan{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    padding-top: 3em;
+}
+
+.bonplan__title{
+    font-weight: 700;
+    text-align: center;
+    padding: 0 0 3em;
+}
+
+.bonplan__desc{
+    font-weight: 400;
+}
+
+.bonPlanPopulaire__text{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-pills .nav-link {
+    width: 11%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 7));
+   }
+}
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+.partenaires__titre{
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 2.5em 4.5em;
+    text-align: center;
+}
+
+.partenaires__titre h2{
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.partenaires__image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+.partenaires__picture{
+    margin: 0 2em 0 0;
+    box-shadow: 4px 2.5px 2px 1px rgb(193 192 193 / 30%);
+    border-radius: 10%;
+}
+
+.partenaires__picture__text{
+    max-width: 35%;
+    margin: 0 0 0 2em;
+}
+
+.partenaires__titre__2{
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 2.5em 4.5em;
+    text-align: center;
+}
+
+.partenaires__titre p {
+    padding-top: 2em;
+}
+
+.mesInfos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.mesInfos2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    #btn-connexion{
+        margin-top: 1.5em;
+    }
+
+    .pricing-plan-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing-plan{
+        width: 50%;
+        margin: 2em 0;
+    }
+
+    .discord-accueil, .bonPlan-accueil, .pp-accueil{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .discord-accueil__text, .bonPlan-accueil__text, .bonPlan-accueil__car, .discord-accueil__image{
+        margin: 0;
+    }
+
+    .bonPlan-accueil__car{
+        max-width: 50%;
+    }
+
+    .mainAccueil img{
+        border-radius: 60px;
+    }
+
+    .row-cols-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row-cols-3 .col{
+        width: 70%;
+        margin: 2em 0;
+    }
+
+    .pp-1__image, .pp-2__image,.pp-3__image, .pp-4__image, .pp-5__image {
+        display: flex;
+        padding: 0 2em;
+    }
+
+    .container-pp__1, .container-pp__2, .container-pp__3, .container-pp__4, .container-pp__5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-pp__1 div, .container-pp__2 div, .container-pp__3 div, .container-pp__4 div, .container-pp__5 div{
+        margin: 0;
+    }
+
+    .container-pp img{
+        border-radius: 60px;
+        width: 400px;
+        height: 230px;
+    }
+}
+
+.piechart {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 33%;
+   
+}
+
+.piechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num{
+    font-size: 30px;
+  }
+
+.box{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.square {
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    margin-left: 55%;
+}
+.coucou{
+    margin-top: -7%;
+}
